@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Instagram Feed with Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body> 
+        <div> 
+            <!-- Nav Bar-->
+         <nav class="navbar bg-body-tertiary">
+              <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"> 
+                        <i class="fa-brands fa-instagram"></i>Instagram</a>
+                </div>
+
+                <!-- Modal ( "Create new Post Button ")-->
+             <nav class="nav navbar-right">
+                        <button type="button" class="btn btn-success me-1" data-bs-toggle="modal" data-bs-target="#Modal">Create a new post</button>
+                        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                         <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="ModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <form>
+                                    <div class="mb-3"> 
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label"></label>
+                                            <textarea class="form-control" id="message-text">Add the caption of your post here</textarea>
+                                        </div>
+                                        </form>
+                                    </div>
+                                <div class="modal-footer justify-content-md-start d-flex"> 
+                                    <button type="button" class="btn btn-secondary"><i class="fa-solid fa-camera"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fa-solid fa-location-pin"></i></button>
+                                </div>
+                                <div class="modal-footer"> 
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                         </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Dropdown ( settings )-->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesiblity</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+         </nav>
+        </div> 
+
+             <!-- Navs and tabs ( "Toggle view")-->
+        <nav>
+            <div class="nav nav-tabs justify-content-md-center border-0 mb-4" id="nav-tab" role="tablist">
+              <button class="nav-link active border-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"> <i <i class="fa-solid fa-table-cells"></i> </i></button>
+              <button class="nav-link border-0 id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"> <i class="fa-solid fa-square"></i> </i></button>
+            </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                
+                <div class="grid-body"> 
+                    <div class="container-fluid"> 
+                        
+                        <div class="justify-content-md-center d-flex">  
+                            <img src="https://i.pinimg.com/474x/d7/3d/30/d73d30f94193357355fef5f54004c3be.jpg" class="m-2" width="400px" height="400px" alt="coffe?"> </img>
+                            <img src="https://i.pinimg.com/474x/43/48/27/4348270a312246902fd6cf4ecfd6244b.jpg" class="m-2" width="400px" height="400px" alt="kettle"> </img>
+                            <img src="https://i.pinimg.com/564x/c3/b4/34/c3b434ce099ce59e5381a5ae06f111cb.jpg" class="m-2" width="400px" height="400px" alt="mugs"> </img>
+                        </div>
+
+                        <div class="justify-content-md-center d-flex">  
+                            <img src="https://i.pinimg.com/474x/e4/68/f6/e468f675afc99bd6077ec8fa55ad3cd6.jpg" class="m-2" width="400px" height="400px" alt="camera"> </img>
+                            <img src="https://i.pinimg.com/474x/ba/83/46/ba83464f92b72473382f10114ba9b8cb.jpg" class="m-2" width="400px" height="400px" alt="lenses"> </img>
+                            <img src="https://i.pinimg.com/474x/26/1f/11/261f11dbe28d73433a168346f68274a2.jpg" class="m-2" width="400px" height="400px" alt="camera and book"> </img>
+                        </div>
+
+                        <div class="justify-content-md-center d-flex">  
+                            <img src="https://i.pinimg.com/474x/17/74/67/177467be214d4e14c6c86f6295137d5e.jpg" class="m-2" width="400px" height="400px" alt="ring"> </img>
+                            <img src="https://i.pinimg.com/474x/92/6b/a4/926ba4b9331fba8ce8dc8bd6dbfd8a65.jpg" class="m-2" width="400px" height="400px" alt="candle"> </img>
+                            <img src="https://i.pinimg.com/474x/40/01/43/400143f5462d075281737f7508d7ee5e.jpg" class="m-2" width="400px" height="400px" alt="shypon"> </img>
+                        </div>
+
+                     </div>
+
+                </div>
+        
+            </div>
+            <!-- Full size view -->
+
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"> 
+
+            <div class="justify-content-md-center d-flex mb-4"> 
+                <div class="post w-25">  
+                    <div class="container border border-light-subtle">
+                         <div class="row">
+                            <div class="col-9 m-2"> <h5> Coffee? </h5> </div>
+                            <div class="col-2 mt-2">11/13</div>
+                         </div>
+                    </div>
+                    <div class="justify-content-md-center d-flex">
+                        <img src="https://i.pinimg.com/474x/d7/3d/30/d73d30f94193357355fef5f54004c3be.jpg"  width="400px" height="400px" alt="coffe?"> </img>
+                    </div>
+                    <div class="border border-light-subtle">
+                        <p class="m-2"> <strong> 500 likes </strong> </p>
+                        <p class="m-2"> One of my favorite things in the world is coffe. Coffe up! <strong> #Coffee</strong> </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="justify-content-md-center d-flex mb-4"> 
+                <div class="post w-25">  
+                    <div class="container border border-light-subtle">
+                         <div class="row">
+                            <div class="col-9 m-2"> <h5> Kettle </h5> </div>
+                            <div class="col-2 mt-2">11/12</div>
+                         </div>
+                    </div>
+                    <div class="justify-content-md-center d-flex">
+                        <img src="https://i.pinimg.com/474x/43/48/27/4348270a312246902fd6cf4ecfd6244b.jpg"  width="400px" height="400px" alt="Kettle"> </img>
+                    </div>
+                    <div class="border border-light-subtle">
+                        <p class="m-2"> <strong> 200 likes </strong> </p>
+                        <p class="m-2"> Old school kettle for boiling water. Can be used to make coffee or tea. </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="justify-content-md-center d-flex mb-4"> 
+                <div class="post w-25">  
+                    <div class="container border border-light-subtle">
+                         <div class="row">
+                            <div class="col-9 m-2"> <h5> Artsy mugs </h5> </div>
+                            <div class="col-2 mt-2">11/07</div>
+                         </div>
+                    </div>
+                    <div class="justify-content-md-center d-flex">
+                        <img src="https://i.pinimg.com/564x/c3/b4/34/c3b434ce099ce59e5381a5ae06f111cb.jpg"   width="365px" height="365px" alt="mugs"> </img>
+                    </div>
+                    <div class="border border-light-subtle">
+                        <p class="m-2"> <strong> 500 likes </strong> </p>
+                        <p class="m-2"> Just some artsy mugs. I love art, do you? </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-content-md-center d-flex mb-4"> 
+                <div class="post w-25">  
+                    <div class="container border border-light-subtle">
+                         <div class="row">
+                            <div class="col-9 m-2"> <h5> Cameras </h5> </div>
+                            <div class="col-2 mt-2">11/03</div>
+                         </div>
+                    </div>
+                    <div class="justify-content-md-center d-flex">
+                        <img src="https://i.pinimg.com/474x/e4/68/f6/e468f675afc99bd6077ec8fa55ad3cd6.jpg"   width="365px" height="365px" alt="camera"> </img>
+                    </div>
+                    <div class="border border-light-subtle">
+                        <p class="m-2"> <strong> 500 likes </strong> </p>
+                        <p class="m-2"> You can't take pictures without a camera. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-content-md-center d-flex mb-4"> 
+                <div class="post w-25">  
+                    <div class="container border border-light-subtle">
+                         <div class="row">
+                            <div class="col-9 m-2"> <h5> Glasses </h5> </div>
+                            <div class="col-2 mt-2">11/01</div>
+                         </div>
+                    </div>
+                    <div class="justify-content-md-center d-flex">
+                        <img src="https://i.pinimg.com/474x/ba/83/46/ba83464f92b72473382f10114ba9b8cb.jpg"   width="365px" height="365px" alt="Lenses"> </img>
+                    </div>
+                    <div class="border border-light-subtle">
+                        <p class="m-2"> <strong> 400 likes </strong> </p>
+                        <p class="m-2"> You can't take pictures nor see anything without lenses. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-content-md-center d-flex mb-4"> 
+                <div class="post w-25">  
+                    <div class="container border border-light-subtle">
+                         <div class="row">
+                            <div class="col-9 m-2"> <h5> Learning about cameras </h5> </div>
+                            <div class="col-2 mt-2">10/30</div>
+                         </div>
+                    </div>
+                    <div class="justify-content-md-center d-flex">
+                        <img src="https://i.pinimg.com/474x/26/1f/11/261f11dbe28d73433a168346f68274a2.jpg"   width="365px" height="365px" alt="booksandcamera"> </img>
+                    </div>
+                    <div class="border border-light-subtle">
+                        <p class="m-2"> <strong> 300 likes </strong> </p>
+                        <p class="m-2"> Insert some cool caption here about books and cameras </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="justify-content-md-center d-flex mb-4"> 
+                <div class="post w-25">  
+                    <div class="container border border-light-subtle">
+                         <div class="row">
+                            <div class="col-9 m-2"> <h5> Ring ring </h5> </div>
+                            <div class="col-2 mt-2">10/18</div>
+                         </div>
+                    </div>
+                    <div class="justify-content-md-center d-flex">
+                        <img src="https://i.pinimg.com/474x/17/74/67/177467be214d4e14c6c86f6295137d5e.jpg"   width="365px" height="365px" alt="ring"> </img>
+                    </div>
+                    <div class="border border-light-subtle">
+                        <p class="m-2"> <strong> 450 likes </strong> </p>
+                        <p class="m-2"> Insert a cool caption about a ring and how cool this ring is </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-content-md-center d-flex mb-4"> 
+                <div class="post w-25">  
+                    <div class="container border border-light-subtle">
+                         <div class="row">
+                            <div class="col-9 m-2"> <h5> Candle </h5> </div>
+                            <div class="col-2 mt-2">10/10</div>
+                         </div>
+                    </div>
+                    <div class="justify-content-md-center d-flex">
+                        <img src="https://i.pinimg.com/474x/92/6b/a4/926ba4b9331fba8ce8dc8bd6dbfd8a65.jpg"   width="365px" height="365px" alt="candle"> </img>
+                    </div>
+                    <div class="border border-light-subtle">
+                        <p class="m-2"> <strong> 550 likes </strong> </p>
+                        <p class="m-2"> Who doesn't love a good smelling (soy made) candle to get you in the mood? </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-content-md-center d-flex mb-4"> 
+                <div class="post w-25">  
+                    <div class="container border border-light-subtle">
+                         <div class="row">
+                            <div class="col-9 m-2"> <h5> Syphon </h5> </div>
+                            <div class="col-2 mt-2">10/08</div>
+                         </div>
+                    </div>
+                    <div class="justify-content-md-center d-flex">
+                        <img src="https://i.pinimg.com/474x/40/01/43/400143f5462d075281737f7508d7ee5e.jpg"  width="365px" height="365px" alt="syphon"> </img>
+                    </div>
+                    <div class="border border-light-subtle">
+                        <p class="m-2"> <strong> 550 likes </strong> </p>
+                        <p class="m-2"> Have you ever tried infused made coffee with syphon? </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    </body>
+</html>
